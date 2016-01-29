@@ -7,10 +7,10 @@ class UserController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       flash[:success] = "Thank You, We will keep you updated!"
-      redirect_to '/new'
+      redirect_to '/'
     else
       flash[:error] = "There was an error, make sure a name and valid email have been entered."
-      render :new
+      redirect_to '/'
     end
   end
   
