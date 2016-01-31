@@ -3,11 +3,11 @@
     <%= form_for @user, url: {action: "create"} do |f| %>
     
       <div class="form-group">
-        <%= f.text_field :name, :placeholder => "Name", class: "form-control" %>
+        <%= f.text_field :name, :placeholder => "Name", class: "form-control square-field" %>
       </div>
       
       <div class="form-group">
-        <%= f.email_field :email, :placeholder => "Email", class: "form-control" %>
+        <%= f.email_field :email, :placeholder => "Email", class: "form-control square-field" %>
       </div>
     
       <%= f.submit "Submit", class: "btn btn-success" %>
@@ -15,4 +15,8 @@
     <% end %>
   </div>
 </div>
+
+<h3 class="text-center">Ride Along on the Open Road</h3>
+
+<p class="text-center">Enjoy the rolling hills and beautiful scenery whilst test driving our latest model.</p>
 
