@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.success, .error {
+  margin-top: 5em;
+  color: #fff;
+  font-weight: bold;
+  padding: .5em;
+  background-color: #191;
+}
+
+.error {
+  background-color: #911;
+}
+
 body {
   background: url("http://res.cloudinary.com/dq2bsl9c5/image/upload/v1454235877/road_hn8bmt.jpg") no-repeat;
   background-position: center center;
